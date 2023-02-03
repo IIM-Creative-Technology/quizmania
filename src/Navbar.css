@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+body{
+    background-image: url(./img/background.png);
+}
+
+.Navbar{
+    box-shadow: none;
+}
+img{
+    width: 22%;
+    padding-right: 40px;
+}
+.sign{
+    color: blue;
+}
+
+.logo{
+    width: 23%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Oswald';
+}
+
+.btn{
+    color:blueviolet;
+}
