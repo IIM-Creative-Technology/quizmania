@@ -22,17 +22,14 @@ function Settings() {
     const handleDifficultyChange = event => {
         setQuestionDifficulty(event.target.value)
     }
-    const handleTypeChange = event => {
-        setQuestionType(event.target.value)
-    }
-    const handleAmountChange = event => {
+    const handleNumberOfQuestions = event => {
         setNumberOfQuestions(event.target.value)
     }
     if (!loading) {
         return (
             <div>
                 <div>
-                    <h2>Select Category:</h2>
+                    <h2>Category:</h2>
                     <select value={questionCategory} onChange={handleCategoryChange}>
                         <option>All</option>
                         {options &&
@@ -44,7 +41,7 @@ function Settings() {
                     </select>
                 </div>
                 <div>
-                    <h2>Select Difficulty:</h2>
+                    <h2>Difficulty:</h2>
                     <select value={questionDifficulty} onChange={handleDifficultyChange}>
                         <option value="" key="difficulty-0">All</option>
                         <option value="easy" key="difficulty-1">Easy</option>
@@ -53,16 +50,8 @@ function Settings() {
                     </select>
                 </div>
                 <div>
-                    <h2>Select Question Type:</h2>
-                    <select value={questionType} onChange={handleTypeChange}>
-                        <option value="" key="type-0">All</option>
-                        <option value="multiple" key="type-1">Multiple Choice</option>
-                        <option value="boolean" key="type-2">True/False</option>
-                    </select>
-                </div>
-                <div>
-                    <h2>Amount of Questions:</h2>
-
+                    <h2>Number of Questions:</h2>
+                        <input value={numberOfQuestions} onChange={handleNumberOfQuestions} />
                 </div>
             </div>
         );

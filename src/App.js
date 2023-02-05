@@ -7,9 +7,9 @@ import Settings from "./components/Settings";
 function App() {
   return (
 
-     <Navbar/>
+     //<Navbar/>
 
-      // <Settings/>
+      <Settings/>
 
   );
 }
