@@ -5,6 +5,9 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Container } from '@mui/system';
+import { Link } from 'react-router-dom';
+import  SignUp  from './SignUp'
+
 
 
 
@@ -20,8 +23,8 @@ export default function ButtonAppBar() {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               <img src='./titre.png' alt='QuizzMania' />
             </Typography>
-            <Button className='sign'>Login</Button>
-            <Button className='sign'>Register</Button>
+            <Link to='/Login'><Button className='sign'  >Login</Button></Link>
+            <Link to='/SignUp'><Button  className='sign'>Register</Button></Link>
           </Toolbar>
         </AppBar>
       </Box>
