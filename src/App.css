@@ -2,9 +2,17 @@
 
 body{
     background-image: url(./img/background.png);
+    font-family: 'Oswald';
 }
 
 .app-main{
   text-align: center;
-  font-family: 'Oswald', cursive;
+  
+}
+
+
+.option-grid:hover{
+  background-color:#A0FF37;
+  color: green;
+  cursor: pointer;
 }

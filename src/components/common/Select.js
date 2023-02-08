@@ -22,12 +22,12 @@ export default function BasicSelect({
             onChange={handleChange}
             >
             <MenuItem value={9}>General Knowledge</MenuItem>
-            <MenuItem value={10}>Entertainment : Books</MenuItem>
-            <MenuItem value={11}>Entertainment : Film</MenuItem>
-            <MenuItem value={12}>Entertainment : Music</MenuItem>
-            <MenuItem value={13}>Entertainment : Musical and Theatres</MenuItem>
-            <MenuItem value={14}>Entertainment : Television</MenuItem>
-            <MenuItem value={15}>Entertainment : Games</MenuItem>
+            <MenuItem value={10}>Books</MenuItem>
+            <MenuItem value={11}>Films</MenuItem>
+            <MenuItem value={12}>Music</MenuItem>
+            <MenuItem value={13}>Musical and Theatres</MenuItem>
+            <MenuItem value={14}>Television</MenuItem>
+            <MenuItem value={15}>Games</MenuItem>
 
             </Select>
         </FormControl>
